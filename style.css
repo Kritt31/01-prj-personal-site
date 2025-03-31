@@ -1,1 +1,87 @@
 /* Add you CSS here */
+
+/* Set the background color for the entire website */
+body {
+  background-color: #00008b; /* Dark blue background */
+  color: #ffffff; /* White text for better contrast */
+}
+
+/* Ensure links also use the dark blue color */
+a {
+  color: #00008b; /* Dark blue for links */
+}
+
+a:hover {
+  color: #0056b3; /* Slightly lighter blue on hover */
+}
+
+/* Hero Section */
+#hero {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Headshot Image */
+.headshot {
+  display: block;
+  margin: 10px auto;
+  width: 300px; 
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Keeps the image circular */
+}
+
+/* About Section */
+#about {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Skills Section */
+#skills {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#skills ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+/* Menu Bar */
+.menu-bar {
+  display: none; /* Hide the menu */
+  flex-direction: column; /* Stack items vertically when shown */
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  text-align: center; /* Center the menu items */
+}
+
+.menu-bar li {
+  margin: 10px 0; /* Add spacing between menu items */
+}
+
+.menu-bar a {
+  text-decoration: none; /* Remove underline from links */
+  color: #000; /* Set link color */
+  font-weight: bold; /* Make links bold */
+}
+
+.menu-bar a:hover {
+  color: #007BFF; /* Change color on hover */
+}
+
+/* Menu Icon */
+.menu-icon {
+  font-size: 24px; /* Set icon size */
+  cursor: pointer; /* Change cursor to pointer */
+  display: block; /* Display the icon */
+  margin: 10px auto; /* Center the icon */
+  text-align: center;
+}
+
+/* Show menu links when the icon is clicked */
+.menu-icon.active + .menu-bar {
+  display: flex; /* Show the menu */
+}
